@@ -17,7 +17,23 @@ function playRound(playerSelection, computerSelection) {
         return 'You Lose!';
     } else if (playerSelection == 'rock' && computerSelection == 'scissors') {
         return 'You Win!';
-    } else {
+    } else if (playerSelection == 'rock' && computerSelection == 'rock') {
+        return 'Draw!';
+    }
+
+    else if (playerSelection == 'paper' && computerSelection == 'scissors') {
+        return 'You Lose!';
+    } else if (playerSelection == 'paper' && computerSelection == 'rock') {
+        return 'You Win!';
+    } else if ((playerSelection == 'paper' && computerSelection == 'paper')){
+        return 'Draw!'
+    }
+
+    else if (playerSelection == 'scissors' && computerSelection == 'rock') {
+        return 'You Lose!';
+    } else if (playerSelection == 'scissors' && computerSelection == 'paper') {
+        return 'You Win!';
+    } else ((playerSelection == 'scissors' && computerSelection == 'scissors')){
         return 'Draw!'
     }
 };
