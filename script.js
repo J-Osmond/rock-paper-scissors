@@ -33,8 +33,8 @@ function playRound(playerSelection, computerSelection) {
         return 'You Lose!';
     } else if (playerSelection == 'scissors' && computerSelection == 'paper') {
         return 'You Win!';
-    } else ((playerSelection == 'scissors' && computerSelection == 'scissors')){
+    } else {
         return 'Draw!'
-    }
+    };
 };
 
