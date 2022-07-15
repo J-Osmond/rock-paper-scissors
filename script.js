@@ -11,7 +11,7 @@ function computerPlay() {
 function playRound(playerSelection, computerSelection) {
 
     computerSelection = computerPlay();
-    playerSelection = 'rock';
+    playerSelection = prompt('Rock,Paper, Scissors?');
 
     if (playerSelection == 'rock' && computerSelection == 'paper') {
         return 'You Lose!';
