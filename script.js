@@ -11,7 +11,7 @@ function computerPlay() {
 function playRound(playerSelection, computerSelection) {
 
     computerSelection = computerPlay();
-    playerSelection = prompt('Rock,Paper, Scissors?');
+    playerSelection = prompt('Rock,Paper, Scissors?').toLowerCase;
 
     if (playerSelection == 'rock' && computerSelection == 'paper') {
         console.log('lose')
