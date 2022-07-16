@@ -41,5 +41,13 @@ function game() {
         playRound()
         console.log(playerScore);
         console.log(computerScore);
-    }
+    };
+
+    if (playerScore > computerScore) {
+        return 'You win!'
+    } else if (playerScore < computerScore) {
+        return 'You Lose!'
+    } else {
+        return 'Draw!'
+    };
 };
