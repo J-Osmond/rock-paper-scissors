@@ -20,12 +20,14 @@ function playRound(playerSelection, computerSelection) {
         playerSelection == 'paper' && computerSelection == 'scissors' ||
         playerSelection == 'scissors' && computerSelection == 'rock') {
             console.log('lose');
+            return computerScore++;
         } 
         
         else if (playerSelection == 'rock' && computerSelection == 'scissors' ||
                 playerSelection == 'paper' && computerSelection == 'rock' ||
                 playerSelection == 'scissors' && computerSelection == 'paper') {
                     console.log('win');
+                    return playerScore++;
                 } 
                 
                 else {
@@ -37,5 +39,7 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     for (let games = 0; games < 5; games++) {
         playRound()
+        console.log(playerScore);
+        console.log(computerScore);
     }
 };
