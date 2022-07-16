@@ -36,13 +36,13 @@ function playRound(playerSelection, computerSelection) {
     }
 
     else if (playerSelection == 'scissors' && computerSelection == 'rock') {
-        console.log(lose)
+        console.log('lose')
         return 'You Lose!';
     } else if (playerSelection == 'scissors' && computerSelection == 'paper') {
-        console.log(win)
+        console.log('win')
         return 'You Win!';
     } else {
-        console.log(draw);
+        console.log('draw');
         return 'Draw!'
         
     };
@@ -54,4 +54,3 @@ function game() {
         
     }
 };
-
