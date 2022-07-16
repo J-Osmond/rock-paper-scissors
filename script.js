@@ -44,10 +44,10 @@ function game() {
     };
 
     if (playerScore > computerScore) {
-        return 'You win!'
+        console.log('You win!')
     } else if (playerScore < computerScore) {
-        return 'You Lose!'
+        console.log('You Lose!')
     } else {
-        return 'Draw!'
+        console.log('Draw!')
     };
 };
