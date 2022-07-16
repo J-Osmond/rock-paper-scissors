@@ -1,3 +1,6 @@
+let playerScore = 0;
+let computerScore = 0;
+
 //will randomly select rock, paper or scissors
 function computerPlay() {
 
